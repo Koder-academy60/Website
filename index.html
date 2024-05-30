@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Amaan's - devloper portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet' >
+</head>
+
+<body>
+<header>
+  <nav>
+    <div class="left">Amaan's portfolio</div>
+    <div class="right">
+      <ul>
+        <li>Home</li>
+        <li>Work</li>
+        <li>Contact Me</li>
+        
+      </ul>
+    </div>
+    
+  </nav>
+</header>
+<style>
+*{
+  margin: 0;
+  padding: 0;
+}
+  body{
+    background-color: rgb(0 , 0 , 33);
+    color: white;
+    font-family: 'poppins' , sans-serif;
+  }
+  nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(18 , 18, 38)
+  }
+  nav ul{
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li{
+    list-style: none;
+    margin: 0 23px;
+  }
+  .left{
+    font-size: 1.5rem;
+  }
+  .FirstSection{
+    display: flex;
+    justify-content: space-around;
+    margin: 80px 0;
+    align-items: center;
+  }
+  .FirstSection > div{
+    width: 30%;
+   
+  }
+  .LeftSection{
+    font-size: 3rem;
+    
+  }
+  .RightSection{
+    
+  }
+  .RightSection img{
+    width: 80%;
+    margin: 30px 0;
+    }
+    .purple{
+      color: rgb(170 ,107 , 228);
+    }
+    nav ul li a{
+      text-decoration: none;
+      cursor: pointer;
+    }
+    nav ul li a:hover{
+      color: rgb(153, 153, 226);
+      
+    font-size: 1.01rem;
+    }
+    #element{
+      color: rgb(170 ,107 , 228);
+    }
+    .SecondSection{
+      max-width: 80vw;
+     margin: auto;
+    }
+</style>
+<main>
+  <section class="FirstSection">
+    <div class="LeftSection">Hi, My name is <span class="purple">Amaan</span> 
+    <div>and I am a passionate </div>
+    <span id="element"></span>
+    </div>
+    <div class="RightSection">
+      <img src="Bg.png"
+    </div>
+  </section>
+  <section class="SecondSection">
+    <hr>
+    <h1>Past Experience</h1>
+  </section>
+</main>
+<!-- Load library from the CDN -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!-- Setup and start animation! -->
+<script>
+  var typed = new Typed('#element', {
+    strings: ['web designer.', 'marketing expert', 'Web developer.'],
+    typeSpeed: 50,
+  });
+</script>
+
+</body>
+</html>
